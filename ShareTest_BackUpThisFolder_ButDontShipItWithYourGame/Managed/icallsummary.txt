@@ -642,6 +642,7 @@ UnityEngine.Screen::get_fullScreen
 UnityEngine.Screen::get_height
 UnityEngine.Screen::get_width
 UnityEngine.Screen::get_dpi
+UnityEngine.ScreenCapture::CaptureScreenshot
 UnityEngine.ScriptableObject::CreateScriptableObject
 UnityEngine.ScriptableObject::CreateScriptableObjectInstanceFromType
 UnityEngine.ScriptingRuntime::GetAllUserAssemblies

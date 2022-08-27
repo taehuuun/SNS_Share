@@ -6,6 +6,6 @@ public class ScreenShot : MonoBehaviour
 {
     public void ClickScreenShot()
     {
-        ScreenCapture.CaptureScreenshot("TEST!!");
+        ScreenCapture.CaptureScreenshot("TEST.png");
     }
 }
