@@ -1933,14 +1933,14 @@ struct SingleRangeComparer_t2D299E0E54D7F24BAF67EA65E92B6FCDB806F9D0_StaticField
 	SingleRangeComparer_t2D299E0E54D7F24BAF67EA65E92B6FCDB806F9D0* ___Instance_0;
 };
 
-// ScreenShot/<CaptureScreen>d__7
-struct U3CCaptureScreenU3Ed__7_tB06D0A8AE4115BB27E1B10D827289D1323141350  : public RuntimeObject
+// ScreenShot/<CaptureScreen>d__8
+struct U3CCaptureScreenU3Ed__8_t0138B8A4178E37DDDE06EC36470FBCB5766DBD41  : public RuntimeObject
 {
-	// System.Int32 ScreenShot/<CaptureScreen>d__7::<>1__state
+	// System.Int32 ScreenShot/<CaptureScreen>d__8::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object ScreenShot/<CaptureScreen>d__7::<>2__current
+	// System.Object ScreenShot/<CaptureScreen>d__8::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// ScreenShot ScreenShot/<CaptureScreen>d__7::<>4__this
+	// ScreenShot ScreenShot/<CaptureScreen>d__8::<>4__this
 	ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5* ___U3CU3E4__this_2;
 };
 
@@ -7572,12 +7572,14 @@ struct ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5  : public MonoBehavi
 	bool ___isCoroutinePlay_7;
 	// System.String ScreenShot::albumName
 	String_t* ___albumName_8;
+	// UnityEngine.Sprite ScreenShot::tmpSprite
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___tmpSprite_9;
 };
 
 struct ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5_StaticFields
 {
 	// UnityEngine.AndroidJavaClass ScreenShot::ajc
-	AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* ___ajc_9;
+	AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* ___ajc_10;
 };
 
 // TMPro.Examples.ShaderPropAnimator
@@ -8485,10 +8487,10 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3241[1] =
 	static_cast<int32_t>(offsetof(NativeShareTest_t09EFC2E30182EAE7423CB21CB9878B1A8A2880AE, ___shareImg_4)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3242[3] = 
 {
-	static_cast<int32_t>(offsetof(U3CCaptureScreenU3Ed__7_tB06D0A8AE4115BB27E1B10D827289D1323141350, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CCaptureScreenU3Ed__7_tB06D0A8AE4115BB27E1B10D827289D1323141350, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CCaptureScreenU3Ed__7_tB06D0A8AE4115BB27E1B10D827289D1323141350, ___U3CU3E4__this_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3243[6] = 
+	static_cast<int32_t>(offsetof(U3CCaptureScreenU3Ed__8_t0138B8A4178E37DDDE06EC36470FBCB5766DBD41, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CCaptureScreenU3Ed__8_t0138B8A4178E37DDDE06EC36470FBCB5766DBD41, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CCaptureScreenU3Ed__8_t0138B8A4178E37DDDE06EC36470FBCB5766DBD41, ___U3CU3E4__this_2)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3243[7] = 
 {
-	static_cast<int32_t>(offsetof(ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5, ___uiObj_4)),static_cast<int32_t>(offsetof(ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5, ___blinkObj_5)),static_cast<int32_t>(offsetof(ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5, ___captureScreen_6)),static_cast<int32_t>(offsetof(ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5, ___isCoroutinePlay_7)),static_cast<int32_t>(offsetof(ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5, ___albumName_8)),static_cast<int32_t>(offsetof(ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5_StaticFields, ___ajc_9)),};
+	static_cast<int32_t>(offsetof(ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5, ___uiObj_4)),static_cast<int32_t>(offsetof(ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5, ___blinkObj_5)),static_cast<int32_t>(offsetof(ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5, ___captureScreen_6)),static_cast<int32_t>(offsetof(ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5, ___isCoroutinePlay_7)),static_cast<int32_t>(offsetof(ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5, ___albumName_8)),static_cast<int32_t>(offsetof(ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5, ___tmpSprite_9)),static_cast<int32_t>(offsetof(ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5_StaticFields, ___ajc_10)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3244[3] = 
 {
 	static_cast<int32_t>(offsetof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15, ___ChatInputField_4)),static_cast<int32_t>(offsetof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15, ___ChatDisplayOutput_5)),static_cast<int32_t>(offsetof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15, ___ChatScrollbar_6)),};

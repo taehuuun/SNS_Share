@@ -32,18 +32,18 @@ extern void ScreenShot_CaptureAndSave_m37E093F19B2A744CD327D899BCC5A219FA33D56A 
 extern void ScreenShot__ctor_m88298D37AB40026949C887BC9FA253BDC3635CF0 (void);
 // 0x0000000A System.Void ScreenShot::.cctor()
 extern void ScreenShot__cctor_mA5BDD6D363721E174858EBC3E5597BD1C354E61F (void);
-// 0x0000000B System.Void ScreenShot/<CaptureScreen>d__7::.ctor(System.Int32)
-extern void U3CCaptureScreenU3Ed__7__ctor_m7E55EA8148050D23F4F9A04AA025E815BAFF00D2 (void);
-// 0x0000000C System.Void ScreenShot/<CaptureScreen>d__7::System.IDisposable.Dispose()
-extern void U3CCaptureScreenU3Ed__7_System_IDisposable_Dispose_m4F6B1334F29A123DA1DAF7A8D1FC42BA1B0A5D7F (void);
-// 0x0000000D System.Boolean ScreenShot/<CaptureScreen>d__7::MoveNext()
-extern void U3CCaptureScreenU3Ed__7_MoveNext_mCA4F1ECA944B364B0D66EEC5EFE958239DB24D95 (void);
-// 0x0000000E System.Object ScreenShot/<CaptureScreen>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CCaptureScreenU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5CB1CDE2A7461C57B17FEC1F4D89B8F966033617 (void);
-// 0x0000000F System.Void ScreenShot/<CaptureScreen>d__7::System.Collections.IEnumerator.Reset()
-extern void U3CCaptureScreenU3Ed__7_System_Collections_IEnumerator_Reset_m416F0D993E10599A444C738B7D0B2854091D5901 (void);
-// 0x00000010 System.Object ScreenShot/<CaptureScreen>d__7::System.Collections.IEnumerator.get_Current()
-extern void U3CCaptureScreenU3Ed__7_System_Collections_IEnumerator_get_Current_mEB380FB3E0583EF06F2024089A49CEBA99B44AFF (void);
+// 0x0000000B System.Void ScreenShot/<CaptureScreen>d__8::.ctor(System.Int32)
+extern void U3CCaptureScreenU3Ed__8__ctor_mD637EE797E6A2D3D1189C91311176207432FBC47 (void);
+// 0x0000000C System.Void ScreenShot/<CaptureScreen>d__8::System.IDisposable.Dispose()
+extern void U3CCaptureScreenU3Ed__8_System_IDisposable_Dispose_mA027F72CC07A0B70A0867051FFEB8E8FE5777015 (void);
+// 0x0000000D System.Boolean ScreenShot/<CaptureScreen>d__8::MoveNext()
+extern void U3CCaptureScreenU3Ed__8_MoveNext_m89AD7308D021BBDF9B8A8C9900E13A6E9832D5E0 (void);
+// 0x0000000E System.Object ScreenShot/<CaptureScreen>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CCaptureScreenU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m82DF6383B55B29F39CEB68A2270347D6D119A9E2 (void);
+// 0x0000000F System.Void ScreenShot/<CaptureScreen>d__8::System.Collections.IEnumerator.Reset()
+extern void U3CCaptureScreenU3Ed__8_System_Collections_IEnumerator_Reset_m71D4843F1E5B9CC0DE8D976E733D174D05BB878A (void);
+// 0x00000010 System.Object ScreenShot/<CaptureScreen>d__8::System.Collections.IEnumerator.get_Current()
+extern void U3CCaptureScreenU3Ed__8_System_Collections_IEnumerator_get_Current_m49C9C35CADA6E702742441CC15DFF4BCD2A651F7 (void);
 // 0x00000011 System.Void ChatController::OnEnable()
 extern void ChatController_OnEnable_m025CE203564D82A1CDCE5E5719DB07E29811D0B7 (void);
 // 0x00000012 System.Void ChatController::OnDisable()
@@ -586,12 +586,12 @@ static Il2CppMethodPointer s_methodPointers[281] =
 	ScreenShot_CaptureAndSave_m37E093F19B2A744CD327D899BCC5A219FA33D56A,
 	ScreenShot__ctor_m88298D37AB40026949C887BC9FA253BDC3635CF0,
 	ScreenShot__cctor_mA5BDD6D363721E174858EBC3E5597BD1C354E61F,
-	U3CCaptureScreenU3Ed__7__ctor_m7E55EA8148050D23F4F9A04AA025E815BAFF00D2,
-	U3CCaptureScreenU3Ed__7_System_IDisposable_Dispose_m4F6B1334F29A123DA1DAF7A8D1FC42BA1B0A5D7F,
-	U3CCaptureScreenU3Ed__7_MoveNext_mCA4F1ECA944B364B0D66EEC5EFE958239DB24D95,
-	U3CCaptureScreenU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5CB1CDE2A7461C57B17FEC1F4D89B8F966033617,
-	U3CCaptureScreenU3Ed__7_System_Collections_IEnumerator_Reset_m416F0D993E10599A444C738B7D0B2854091D5901,
-	U3CCaptureScreenU3Ed__7_System_Collections_IEnumerator_get_Current_mEB380FB3E0583EF06F2024089A49CEBA99B44AFF,
+	U3CCaptureScreenU3Ed__8__ctor_mD637EE797E6A2D3D1189C91311176207432FBC47,
+	U3CCaptureScreenU3Ed__8_System_IDisposable_Dispose_mA027F72CC07A0B70A0867051FFEB8E8FE5777015,
+	U3CCaptureScreenU3Ed__8_MoveNext_m89AD7308D021BBDF9B8A8C9900E13A6E9832D5E0,
+	U3CCaptureScreenU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m82DF6383B55B29F39CEB68A2270347D6D119A9E2,
+	U3CCaptureScreenU3Ed__8_System_Collections_IEnumerator_Reset_m71D4843F1E5B9CC0DE8D976E733D174D05BB878A,
+	U3CCaptureScreenU3Ed__8_System_Collections_IEnumerator_get_Current_m49C9C35CADA6E702742441CC15DFF4BCD2A651F7,
 	ChatController_OnEnable_m025CE203564D82A1CDCE5E5719DB07E29811D0B7,
 	ChatController_OnDisable_mD49D03719CAEBB3F59F24A7FA8F4FD30C8B54E46,
 	ChatController_AddToChatOutput_m9AB8FA8A32EA23F2E55795D8301ED0BF6A59F722,

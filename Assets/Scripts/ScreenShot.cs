@@ -9,7 +9,7 @@ public class ScreenShot : MonoBehaviour
 {
     [SerializeField] private GameObject uiObj;
     [SerializeField] private GameObject blinkObj;
-    [SerializeField] private GameObject captureScreen;
+    [SerializeField] private Image captureScreen;
     [SerializeField] private bool isCoroutinePlay;
     [SerializeField] private string albumName = "";
     [SerializeField] private Sprite tmpSprite = null;
@@ -53,8 +53,8 @@ public class ScreenShot : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(0.3f);
 
-        captureScreen.GetComponent<Image>().sprite = tmpSprite;
-        captureScreen.SetActive(true);
+        captureScreen.sprite = tmpSprite;
+        captureScreen.gameObject.SetActive(true);
         Debug.Log("캡쳐 이미지 활성화");
 
         isCoroutinePlay = false;
@@ -63,6 +63,9 @@ public class ScreenShot : MonoBehaviour
     private void CaptureAndSave()
     {
         Texture2D capture = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
+        
+        tmpSprite = Sprite.Create(capture, new Rect(0,0,capture.width,capture.height), new Vector2(0.5f, 0.5f));
+
         capture.ReadPixels(new Rect(0,0,Screen.width,Screen.height),0,0);
         capture.Apply();
         
@@ -73,7 +76,6 @@ public class ScreenShot : MonoBehaviour
         // To avoid memory leaks.
         // 복사 완료됐기 때문에 원본 메모리 삭제
 
-        tmpSprite = Sprite.Create(capture, new Rect(0,0,capture.width,capture.height), new Vector2(0.5f, 0.5f));
 
         Destroy(capture);
     }
