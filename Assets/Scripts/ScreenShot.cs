@@ -12,6 +12,7 @@ public class ScreenShot : MonoBehaviour
     [SerializeField] private GameObject captureScreen;
     [SerializeField] private bool isCoroutinePlay;
     [SerializeField] private string albumName = "";
+    [SerializeField] private Sprite tmpSprite = null;
 
     #if UNITY_ANDROID
     private static AndroidJavaClass ajc = new AndroidJavaClass("com.yasirkula.unity.NativeGallery");
@@ -52,6 +53,7 @@ public class ScreenShot : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(0.3f);
 
+        captureScreen.GetComponent<Image>().sprite = tmpSprite;
         captureScreen.SetActive(true);
         Debug.Log("캡쳐 이미지 활성화");
 
@@ -71,9 +73,7 @@ public class ScreenShot : MonoBehaviour
         // To avoid memory leaks.
         // 복사 완료됐기 때문에 원본 메모리 삭제
 
-        Sprite newSprtie = Sprite.Create(capture, new Rect(0,0,capture.width,capture.height), new Vector2(0.5f, 0.5f));
-        
-        captureScreen.GetComponent<Image>().sprite = newSprtie;
+        tmpSprite = Sprite.Create(capture, new Rect(0,0,capture.width,capture.height), new Vector2(0.5f, 0.5f));
 
         Destroy(capture);
     }
