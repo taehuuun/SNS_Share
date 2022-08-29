@@ -41,6 +41,7 @@ public class ScreenShot : MonoBehaviour
 
         yield return new WaitForEndOfFrame();
 
+        blinkObj.SetActive(false );
         uiObj.SetActive(true);
 
         yield return new WaitForSecondsRealtime(0.3f);
