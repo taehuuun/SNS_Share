@@ -30,23 +30,30 @@ public class ScreenShot : MonoBehaviour
         isCoroutinePlay = true;
 
         uiObj.SetActive(false);
+        Debug.Log("UI 비활성화");
 
         yield return new WaitForEndOfFrame();
 
         CaptureAndSave();
+        Debug.Log("캡쳐 및 저장");
 
         yield return new WaitForEndOfFrame();
 
         blinkObj.SetActive(true);
 
+        Debug.Log("캡쳐 효과 활성화");
+
         yield return new WaitForEndOfFrame();
 
-        blinkObj.SetActive(false );
+        blinkObj.SetActive(false);
         uiObj.SetActive(true);
+
+        Debug.Log("캡쳐 효과 비활성화 및 UI 활성화");
 
         yield return new WaitForSecondsRealtime(0.3f);
 
         ShowCaptureImg();
+        Debug.Log("캡쳐 이미지 활성화");
         isCoroutinePlay = false;
     }
 
@@ -67,7 +74,7 @@ public class ScreenShot : MonoBehaviour
     private void ShowCaptureImg()
     {
         string path = GetLastPicurePath();
-
+        Debug.Log($"PATH : {path}");
         if(path == null)
             return;
         
