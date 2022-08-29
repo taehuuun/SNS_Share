@@ -174,6 +174,7 @@ UnityEngine.Animator::SetTriggerString
 UnityEngine.Application::get_isBatchMode
 UnityEngine.Application::get_isFocused
 UnityEngine.Application::get_isPlaying
+UnityEngine.Application::get_persistentDataPath
 UnityEngine.Application::get_temporaryCachePath
 UnityEngine.Application::set_targetFrameRate
 UnityEngine.Application::get_platform
@@ -432,6 +433,7 @@ UnityEngine.GUIUtility::SetKeyboardControlToLastControlId
 UnityEngine.GUIUtility::set_compositionCursorPos_Injected
 UnityEngine.GUIUtility::set_imeCompositionMode
 UnityEngine.GUIUtility::set_systemCopyBuffer
+UnityEngine.ImageConversion::LoadImage
 UnityEngine.ImageConversion::EncodeToJPG
 UnityEngine.ImageConversion::EncodeToPNG
 UnityEngine.Input::CheckDisabled
@@ -567,6 +569,9 @@ UnityEngine.PlayerConnectionInternal::PollInternal
 UnityEngine.PlayerConnectionInternal::RegisterInternal
 UnityEngine.PlayerConnectionInternal::SendMessage
 UnityEngine.PlayerConnectionInternal::UnregisterInternal
+UnityEngine.PlayerPrefs::TrySetInt
+UnityEngine.PlayerPrefs::GetInt
+UnityEngine.PlayerPrefs::Save
 UnityEngine.PropertyNameUtils::PropertyNameFromString_Injected
 UnityEngine.QualitySettings::get_vSyncCount
 UnityEngine.QualitySettings::get_activeColorSpace
@@ -642,7 +647,6 @@ UnityEngine.Screen::get_fullScreen
 UnityEngine.Screen::get_height
 UnityEngine.Screen::get_width
 UnityEngine.Screen::get_dpi
-UnityEngine.ScreenCapture::CaptureScreenshot
 UnityEngine.ScriptableObject::CreateScriptableObject
 UnityEngine.ScriptableObject::CreateScriptableObjectInstanceFromType
 UnityEngine.ScriptingRuntime::GetAllUserAssemblies
@@ -662,6 +666,7 @@ UnityEngine.Sprite::get_border_Injected
 UnityEngine.Sprite::get_bounds_Injected
 UnityEngine.Sprite::get_pivot_Injected
 UnityEngine.Sprite::get_rect_Injected
+UnityEngine.Sprite::CreateSprite_Injected
 UnityEngine.Sprite::get_associatedAlphaSplitTexture
 UnityEngine.Sprite::get_texture
 UnityEngine.Sprite::get_uv
