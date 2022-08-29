@@ -7,6 +7,7 @@ using NativeGalleryNamespace;
 
 public class ScreenShot : MonoBehaviour
 {
+    [SerializeField] private GameObject uiObj;
     [SerializeField] private GameObject blinkObj;
     [SerializeField] private GameObject captureScreen;
     [SerializeField] private bool isCoroutinePlay;
@@ -20,6 +21,7 @@ public class ScreenShot : MonoBehaviour
     {
         if(!isCoroutinePlay)
         {
+            StartCoroutine(CaptureScreen());
         }
     }
 
@@ -27,13 +29,24 @@ public class ScreenShot : MonoBehaviour
     {
         isCoroutinePlay = true;
 
+        uiObj.SetActive(false);
+
+        yield return new WaitForEndOfFrame();
+
+        CaptureAndSave();
+
         yield return new WaitForEndOfFrame();
 
         blinkObj.SetActive(true);
 
         yield return new WaitForEndOfFrame();
 
+        uiObj.SetActive(true);
+
         yield return new WaitForSecondsRealtime(0.3f);
+
+        ShowCaptureImg();
+        isCoroutinePlay = false;
     }
 
     private void CaptureAndSave()
