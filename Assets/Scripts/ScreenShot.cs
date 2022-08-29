@@ -60,21 +60,27 @@ public class ScreenShot : MonoBehaviour
         isCoroutinePlay = false;
     }
 
+    public void ClickShare()
+    {
+        new NativeShare().AddFile(tmpTexture)
+		.SetSubject( "TES TEST" ).SetText( "Hello world!" ).SetUrl( "https://www.naver.com/" )
+		.SetCallback( ( result, shareTarget ) => Debug.Log( "Share result: " + result + ", selected app: " + shareTarget ) )
+		.Share();
+    }
+    public void ClosePreview()
+    {
+        tmpTexture = null;
+        captureScreen.gameObject.SetActive(false);
+    }
+
     private void CaptureAndSave()
     {
         tmpTexture = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
-        
 
         tmpTexture.ReadPixels(new Rect(0,0,Screen.width,Screen.height),0,0);
         tmpTexture.Apply();
 
          Debug.Log("" + NativeGallery.SaveImageToGallery(tmpTexture, albumName,
             "Screenshot_" + System.DateTime.Now.ToString("dd-MM-yyyy-HH-mm-ss") + "{0}.png"));
-    }
-
-    public void ClosePreview()
-    {
-        tmpTexture = null;
-        captureScreen.gameObject.SetActive(false);
     }
 }
