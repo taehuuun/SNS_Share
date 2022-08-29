@@ -11,6 +11,10 @@ public class ScreenShot : MonoBehaviour
     [SerializeField] private GameObject captureScreen;
     [SerializeField] private bool isCoroutinePlay;
     [SerializeField] private string albumName = "";
+
+    #if UNITY_ANDROID
+    private static AndroidJavaClass ajc = new AndroidJavaClass("com.yasirkula.unity.NativeGallery");
+    #endif
     
     public void ClickScreenShot()
     {
@@ -48,7 +52,7 @@ public class ScreenShot : MonoBehaviour
 
     private void ShowCaptureImg()
     {
-        string path = "";
+        string path = GetLastPicurePath();
 
         if(path == null)
             return;
@@ -72,5 +76,22 @@ public class ScreenShot : MonoBehaviour
         }
 
         return texture;
+    }
+
+    private string GetLastPicurePath()
+    {
+        string path;
+        #if !UNITY_EDITOR && UNITY_ANDROID
+        path = ajc.CallStatic<string>("GetMediaPath", "Shine Bright");
+        #else
+        path = Application.persistentDataPath;
+        #endif
+
+        string[] files = Directory.GetFiles(path,"*.png");
+
+        if(files.Length >0)
+            return files[files.Length-1];
+        else
+            return null;
     }
 }
